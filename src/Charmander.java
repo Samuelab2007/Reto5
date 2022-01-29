@@ -2,11 +2,13 @@ public class Charmander extends Pokemon{
     private String nombre;
     private byte nivel;
     private int salud;
+    private final int tamanho;
 
     public Charmander(String nombre, byte nivel, int salud){
         this.nombre = nombre;
         this.nivel = nivel;
         this.salud = salud;
+        this.tamanho = 1;
     }
 
     @Override
@@ -41,6 +43,11 @@ public class Charmander extends Pokemon{
 
     public void setSalud(int salud) {
         this.salud = salud;
+    }
+
+    @Override
+    public int getTamanho() {
+        return tamanho;
     }
 
     public int getSalud() {

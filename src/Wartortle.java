@@ -27,6 +27,12 @@ public class Wartortle extends Pokemon{
         this.salud = salud;
     }
 
+
+    @Override
+    public int getTamanho() {
+        return 2;
+    }
+
     @Override
     public Blastoise evolucionar(){
         Blastoise blastoise = new Blastoise();

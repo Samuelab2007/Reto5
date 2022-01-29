@@ -8,10 +8,11 @@ public class Charmeleon extends Pokemon{
         this.nivel = nivel;
         this.salud = salud;
     }
-    public Charmeleon(){}
+    public Charmeleon(){
+    }
 
     @Override
-    public Pokemon evolucionar() {
+    public Charizard evolucionar() {
         Charizard charizard = new Charizard();
         charizard.setNombre(getNombre());
         charizard.setNivel(getNivel());
@@ -44,4 +45,10 @@ public class Charmeleon extends Pokemon{
     public void setSalud(int salud) {
         this.salud = salud;
     }
+
+    @Override
+    public int getTamanho() {
+        return 2;
+    }
+
 }

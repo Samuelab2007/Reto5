@@ -15,6 +15,10 @@ public class Squirtle extends Pokemon{
         return nivel;
     }
 
+    @Override
+    public int getTamanho() {
+        return 1;
+    }
 
     @Override
     public Wartortle evolucionar() {

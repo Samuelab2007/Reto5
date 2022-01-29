@@ -3,6 +3,17 @@ public class Charizard extends Pokemon{
     private byte nivel;
     private int salud;
 
+
+    public Charizard(String nombre, byte nivel, int salud){
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.salud = salud;
+    }
+    public Charizard(){
+
+    }
+
+
     @Override
     public Pokemon evolucionar() throws NoEvolucionaException{
         throw new NoEvolucionaException();
@@ -14,12 +25,18 @@ public class Charizard extends Pokemon{
     }
 
     public byte getNivel() {
-        return nivel;
+       return nivel;
     }
 
     public void setNivel(byte nivel) {
         this.nivel = nivel;
     }
+
+    @Override
+    public int getTamanho() {
+        return 3;
+    }
+
 
     public int getSalud() {
         return salud;
@@ -29,7 +46,7 @@ public class Charizard extends Pokemon{
         this.salud = salud;
     }
 
-    public String getNombre() {
+   public String getNombre() {
         return nombre;
     }
 
