@@ -3,6 +3,13 @@ public class Wartortle extends Pokemon{
     private byte nivel;
     private int salud;
 
+    public Wartortle(String nombre, byte nivel, int salud) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.salud = salud;
+    }
+    public Wartortle(){}
+
     public String getNombre() {
         return nombre;
     }
